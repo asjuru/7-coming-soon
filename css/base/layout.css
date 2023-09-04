@@ -1,0 +1,36 @@
+body {
+    display: inline-block;
+    margin: 0;
+}
+main {
+    float: left;
+    width: 100%;
+}
+.container {
+    float: left;
+    width: 100%;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+.row {
+    width: 1000px;
+    float: left;
+    background-color: yellow;
+    margin-left:calc(50% - 500px);
+}
+.row-short {
+    width: 600px;
+    float: left;
+    background-color: pink;
+    margin-left:calc(50% - 300px);
+}
+.left-column {
+    float: left;
+    width: 50%;
+}
+.right-column {
+    float: left;
+    width: 50%;
+}
+/* visur "display: inline-block;" keiciamas i  "float: left;"
+Nebelieka tarpeliu tarp bloku. */
