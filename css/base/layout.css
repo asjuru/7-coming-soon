@@ -12,6 +12,10 @@ main {
     padding-top: 60px;
     padding-bottom: 60px;
 }
+.main-content {
+    display: flex;
+    justify-content: space-between;
+}
 .row {
     width: 1000px;
     float: left;
@@ -30,7 +34,7 @@ main {
 }
 .right-column {
     float: left;
-    width: 50%;
+    width: 40%;
 }
 /* visur "display: inline-block;" keiciamas i  "float: left;"
 Nebelieka tarpeliu tarp bloku. */
