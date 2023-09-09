@@ -63,6 +63,20 @@ auto: line hight > - - font size
 - **display: inline;** -            eina is vienos eiles i kita (a, span)
 - **display: inline-block;** -      stengiasi buti vienoje eileje su kitais, bet jei netelpa - VISAS nusoka i nauja eile
 - **display: flex;** -             telpa :D
+```
+.main-content {
+    display: flex;
+    justify-content: space-between;
+}
+```
+```
+.main-content {
+        flex-wrap: wrap;
+        gap: 60px;  
+    }
+```
+
+-**flex-direction: row or column;**
 
 -->
 - **justify-content: space-around;** - 
