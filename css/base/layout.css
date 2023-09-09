@@ -1,0 +1,81 @@
+body {
+    display: inline-block;
+    margin: 0;
+}
+main {
+    float: left;
+    width: 100%;
+}
+.container {
+    float: left;
+    width: 100%;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+.main-content {
+    display: flex;
+    justify-content: space-between;
+}
+.row {
+    width: 1000px;
+    float: left;
+    margin-left:calc(50% - 500px);
+}
+.row-short {
+    width: 600px;
+    float: left;
+    margin-left:calc(50% - 300px);
+}
+.left-column {
+    float: left;
+    width: 50%;
+}
+.right-column {
+    float: left;
+    width: 40%;
+}
+/* visur "display: inline-block;" keiciamas i  "float: left;"
+Nebelieka tarpeliu tarp bloku. */
+
+/* min-width */
+/* width */
+/* max-width */
+
+@media (max-width: 1100px) {
+    .row {
+        width: 800px;
+        margin-left: calc(50%-400px);
+    }
+}
+@media (max-width: 900px) {
+    .row {
+        width: 600px;
+        margin-left: calc(50%-300px);
+    }
+    .main-content {
+        flex-wrap: wrap;
+        gap: 60px;
+    }
+    .right-column,
+    .left-column {
+        width: 100%;
+    }
+}
+@media (max-width: 700px) {
+    .row,
+    .row-short {
+        width: 400px;
+        margin-left: calc(50%-200px);
+    }
+}
+/* 460px ismanaus plotas */
+@media (max-width: 460px) {
+    .container {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .row {
+        width: 100%;
+        margin-left: 0;
+    }
+}

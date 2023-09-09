@@ -14,7 +14,7 @@ md - [Github markdown syntax](https://docs.github.com/en/get-started/writing-on-
 >- ctrl + alt + rodykle (virsu, apacia) - multi redagavimas
 >- ctrl + / - pakomentuoja eilutę(-s)
 >- ctrl + rodykle (virsu, apacia) - judina slider'i nekeiciant eilutes
->- ctrl + l - pažymi visą esamą eilutę
+>- ctrl + L - pažymi visą esamą eilutę
 >- alt + z - pasiziureti netelpancia eilute
 
 
@@ -62,6 +62,42 @@ auto: line hight > - - font size
 - **display: block;** -             is virsaus i apacia (dauguma)
 - **display: inline;** -            eina is vienos eiles i kita (a, span)
 - **display: inline-block;** -      stengiasi buti vienoje eileje su kitais, bet jei netelpa - VISAS nusoka i nauja eile
+- **display: flex;** -             telpa :D
+```
+.main-content {
+    display: flex;
+    justify-content: space-between;
+}
+```
+```
+.main-content {
+        flex-wrap: wrap;
+        gap: 60px;  
+    }
+NOTE: gap visam elementui vienodi; norint skirtingu naudoti margin-top/botom
+```
+
+-**flex-direction: row or column;**
+
+-->
+- **justify-content: space-around;** - 
+- **justify-content: space-evenly;** - 
+- **justify-content: space-between;** - 
+
+-->
+
+- **box-sizing: border-box;** - apibrezia, kad fiksuotas box dydis, turinys su tekstu, border ir padding turi tilpti jame
+
+```
+\* {box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    }
+
+NOTE:
+* - savybes priskiriamos visiems elementams
+padding ir margin po 0; kad narsykle pati nepriskirtu automatiskai.
+```
 
 -->
 
@@ -155,4 +191,7 @@ main > article > header {
 
 >- git config --global user.name
 >- git config --global user.email
-
+>- git fetsh    branch naujos pridejimas
+```
+<a href="mailto:vardas.pavarde@gmail.com">vardas.pavarde@gmail.com</a>
+```
