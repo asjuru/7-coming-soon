@@ -74,6 +74,7 @@ auto: line hight > - - font size
         flex-wrap: wrap;
         gap: 60px;  
     }
+NOTE: gap visam elementui vienodi; norint skirtingu naudoti margin-top/botom
 ```
 
 -**flex-direction: row or column;**
