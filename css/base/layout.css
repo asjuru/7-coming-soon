@@ -19,13 +19,11 @@ main {
 .row {
     width: 1000px;
     float: left;
-    background-color: yellow;
     margin-left:calc(50% - 500px);
 }
 .row-short {
     width: 600px;
     float: left;
-    background-color: pink;
     margin-left:calc(50% - 300px);
 }
 .left-column {
