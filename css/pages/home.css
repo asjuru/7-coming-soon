@@ -22,3 +22,25 @@ gap: 30px;
     margin-top: 30px;
     margin-bottom: 30px;
 }
+.section-type {
+    text-transform: uppercase;
+    font-size: 20px;
+}
+.section-description {
+    font-size: 18px;
+    color: #555;
+}
+.section-description > a {
+    color: var(--secondary-color);
+    text-decoration: none;
+}
+.section-description > a:hover {
+    text-decoration: underline;
+}
+
+.left-column,
+.right-column {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
